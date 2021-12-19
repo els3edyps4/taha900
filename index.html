@@ -49,12 +49,12 @@ if (req.readyState == 4){
   
   <div id=mymenu style="text-align:center">
     <div text-align= center>Pass = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span id=failCounter></span></div>
-    <div style="width:100%;font-size:25px;color:white">
+    <div style="width:100%;font-size:35px;color:white">
     PS4 Firmware <span id="PS4fw"></span></div>
-    <br><br><div style=font-size:35px>GOLDHEN </div>
+    <br><br><div style=font-size:25px>GOLDHEN </div>
     <button onMouseOver="msgs.innerHTML='GoldHen v2.0b - By SiSTRo'"; onmouseout= onclick="load_goldhen(); return false">GoldHen V2.0B</button>
    
-    <br><br><div style=font-size:30px>PAYLOADS SECTION 1</div>
+    <br><br><div style=font-size:25px>PAYLOADS SECTION 1</div>
     <button onMouseOver="msgs.innerHTML='App-2-Usb - Original Version By Stooged / 9.00 Port By Al Azif'"; onclick="load_app2usb(); return false">App-2-Usb</button>
     <button onMouseOver="msgs.innerHTML='Disable-Updates v1.0 - By Al Azif'"; onclick="load_disableupdates(); return false">Disable-Updates</button>
     <button onMouseOver="msgs.innerHTML='Enable-Updates v1.0 - By Al Azif'"; onclick="load_enableupdates(); return false">Enable-Updates</button>
@@ -75,7 +75,7 @@ if (req.readyState == 4){
 var exec_type = "";
 
 function load_goldhen(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B ...</h1>";
+msgs.innerHTML="<h1 style='font-size:35px;text-align:center;'>Loading GoldHen V2.0B ...</h1>";
 LoadedMSG="GoldHen V2.0B Loaded";
 PLfile = "pl_goldhen20b.bin";
 exec_type = "payload";
@@ -89,7 +89,7 @@ toogle_payload();
 }
 
 function load_disableupdates(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Disable-Updates ...</h1>";
+msgs.innerHTML="<h1 style='font-size:35px;text-align:center;'>Loading Disable-Updates ...</h1>";
 LoadedMSG="Disable-Updates Loaded";
 PLfile = "pl_disableupdates.bin";
 exec_type = "payload";
@@ -97,7 +97,7 @@ toogle_payload();
 }
 
 function load_enableupdates(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Enable-Updates ...</h1>";
+msgs.innerHTML="<h1 style='font-size:35px;text-align:center;'>Loading Enable-Updates ...</h1>";
 LoadedMSG="Enable-Updates Loaded";
 PLfile = "pl_enableupdates.bin";
 exec_type = "payload";
@@ -113,7 +113,7 @@ toogle_payload();
 }
 
 function load_app2usb(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading App-To-Usb ...</h1>";
+msgs.innerHTML="<h1 style='font-size:35px;text-align:center;'>Loading App-To-Usb ...</h1>";
 LoadedMSG="App-To-Usb Loaded";
 PLfile = "pl_app2usb.bin";
 exec_type = "payload";
